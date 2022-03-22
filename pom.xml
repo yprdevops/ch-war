@@ -66,10 +66,10 @@
   </build>
   <distributionManagement>    
   <snapshotRepository>
-      <id>depolyment</id>
-      <name>snapshot releases</name>
+      <id>nexusdepolymentrepo</id>
       <url>http://3.108.219.163:8081/repository/maven-snapshots/</url>	
+      <name>snapshot</name>    
   </snapshotRepository>
-  </distributionManagement>
+ </distributionManagement>
   
 </project>
