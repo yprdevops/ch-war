@@ -66,9 +66,8 @@
   </build>
   <distributionManagement>    
   <snapshotRepository>
-      <id>nexusdepolymentrepo</id>
-      <url>http://3.108.219.163:8081/repository/maven-snapshots/</url>	
-      <name>snapshot</name>    
+      <id>nexus-snapshots</id>
+      <url>http://3.108.219.163:8081/repository/maven-snapshots/</url>   
   </snapshotRepository>
  </distributionManagement>
   
