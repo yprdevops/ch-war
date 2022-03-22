@@ -26,6 +26,11 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.sonarsource.scanner.maven</groupId>
+      <artifactId>sonar-maven-plugin</artifactId>
+      <version>3.2</version>
+    </dependency>
   </dependencies>
 
   <build>
@@ -69,6 +74,20 @@
       <id>nexus-snapshots</id>
       <url>http://13.127.24.208:8081/repository/maven-snapshots/</url>   
   </snapshotRepository>
- </distributionManagement>
+ </distributionManagement> 
+  <profiles>
+    <profile>
+      <id>sonar</id>
+      <activation>
+      <activeByDefault>true</activeByDefault>
+      </activation>    
+     <properties>
+         <!-- Optional URL to server. Default value is http://localhost:9000 -->
+         <sonar.host.url>
+         http://13.232.14.95:9000/
+         </sonar.host.url>
+    </properties>
+</profile>
+</profiles>
   
 </project>
